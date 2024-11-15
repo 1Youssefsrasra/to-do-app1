@@ -1,21 +1,21 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: To-Do-App
+  name: to-do-app
   labels:
-    app: To-Do-App
+    app: to-do-app
 spec:
   replicas: 2
   selector:
     matchLabels:
-      app: To-Do-App
+      app: to-do-app
   template:
     metadata:
       labels:
-        app: To-Do-App
+        app: to-do-app
     spec:
       containers:
-      - name: To-Do-App
+      - name: to-do-app
         image: djoo01/todoapp:latest
         ports:
         - containerPort: 80
